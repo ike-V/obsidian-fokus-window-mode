@@ -1,13 +1,12 @@
 /* Fokus Window Mode — focus window for the Fokus theme (⌘+\).
    body.fokus-collapsed   theme hides tab bar / title bar / status bar
-   showRibbon config      ribbon (when body.fokus-hide-ribbon)
    leftSplit / rightSplit sidebars */
 const { Plugin, setIcon } = require('obsidian');
 
 module.exports = class FokusWindowMode extends Plugin {
   async onload() {
     this.state = Object.assign(
-      { collapsed: false, ribbonBefore: true, leftBefore: false, rightBefore: false },
+      { collapsed: false, leftBefore: false, rightBefore: false },
       await this.loadData(),
     );
 
@@ -48,14 +47,11 @@ module.exports = class FokusWindowMode extends Plugin {
 
   async toggle() {
     const ws = this.app.workspace;
-    const vault = this.app.vault;
     this.state.collapsed = !this.state.collapsed;
 
     if (this.state.collapsed) {
-      this.state.ribbonBefore = vault.getConfig('showRibbon') !== false;
       this.state.leftBefore = !ws.leftSplit.collapsed;
       this.state.rightBefore = !ws.rightSplit.collapsed;
-      if (document.body.hasClass('fokus-hide-ribbon')) vault.setConfig('showRibbon', false);
       ws.leftSplit.collapse();
       ws.rightSplit.collapse();
     } else {
@@ -68,7 +64,6 @@ module.exports = class FokusWindowMode extends Plugin {
 
   restore() {
     const ws = this.app.workspace;
-    if (this.state.ribbonBefore) this.app.vault.setConfig('showRibbon', true);
     if (this.state.leftBefore) ws.leftSplit.expand();
     if (this.state.rightBefore) ws.rightSplit.expand();
   }
