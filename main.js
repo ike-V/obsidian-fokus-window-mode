@@ -1,12 +1,11 @@
 /* Fokus Window Mode — focus window for the Fokus theme (⌘+\).
-   body.fokus-collapsed   theme hides tab bar / title bar / status bar
-   leftSplit / rightSplit sidebars */
+   body.fokus-collapsed   theme hides ribbon, sidebars, tab bar, title bar, status bar */
 const { Plugin, setIcon } = require('obsidian');
 
 module.exports = class FokusWindowMode extends Plugin {
   async onload() {
     this.state = Object.assign(
-      { collapsed: false, leftBefore: false, rightBefore: false },
+      { collapsed: false },
       await this.loadData(),
     );
 
@@ -29,7 +28,6 @@ module.exports = class FokusWindowMode extends Plugin {
   }
 
   onunload() {
-    if (this.state.collapsed) this.restore();
     document.body.removeClass('fokus-collapsed');
     document.querySelectorAll('.fokus-collapse-chevron').forEach((el) => el.remove());
     this.strip?.remove();
@@ -46,26 +44,9 @@ module.exports = class FokusWindowMode extends Plugin {
   }
 
   async toggle() {
-    const ws = this.app.workspace;
     this.state.collapsed = !this.state.collapsed;
-
-    if (this.state.collapsed) {
-      this.state.leftBefore = !ws.leftSplit.collapsed;
-      this.state.rightBefore = !ws.rightSplit.collapsed;
-      ws.leftSplit.collapse();
-      ws.rightSplit.collapse();
-    } else {
-      this.restore();
-    }
-
     document.body.toggleClass('fokus-collapsed', this.state.collapsed);
     await this.saveData(this.state);
-  }
-
-  restore() {
-    const ws = this.app.workspace;
-    this.state.leftBefore ? ws.leftSplit.expand() : ws.leftSplit.collapse();
-    this.state.rightBefore ? ws.rightSplit.expand() : ws.rightSplit.collapse();
   }
 
   addButtons() {
