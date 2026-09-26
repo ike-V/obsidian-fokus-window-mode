@@ -2,6 +2,8 @@
 
 Companion plugin for the **[Fokus](https://github.com/ike-V/obsidian-fokus)** theme: one toggle turns Obsidian into a distraction-free focus window.
 
+![Focus window across color schemes](screenshots/focus-window.jpg)
+
 ## Use
 
 - **⌘+\\** (command: *Toggle focus window*), or the chevron in the tab bar.
@@ -10,6 +12,8 @@ Companion plugin for the **[Fokus](https://github.com/ike-V/obsidian-fokus)** th
 The plugin only toggles a class; the Fokus theme hides the ribbon, sidebars, tab bar, title bar and status bar. Nothing in your workspace or settings is changed, so sidebars keep whatever state they have.
 
 Choose what gets hidden in **Style Settings → Fokus Style Settings**.
+
+![Writing in the focus window](screenshots/writing.jpg)
 
 ## Requirements
 
