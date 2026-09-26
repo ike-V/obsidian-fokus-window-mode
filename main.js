@@ -64,8 +64,8 @@ module.exports = class FokusWindowMode extends Plugin {
 
   restore() {
     const ws = this.app.workspace;
-    if (this.state.leftBefore) ws.leftSplit.expand();
-    if (this.state.rightBefore) ws.rightSplit.expand();
+    this.state.leftBefore ? ws.leftSplit.expand() : ws.leftSplit.collapse();
+    this.state.rightBefore ? ws.rightSplit.expand() : ws.rightSplit.collapse();
   }
 
   addButtons() {
