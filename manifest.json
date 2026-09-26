@@ -4,6 +4,7 @@
 	"version": "1.5.0",
 	"minAppVersion": "1.4.0",
 	"description": "Companion to the Fokus theme: ⌘+\\ hides the ribbon, sidebars and tab bar for a distraction-free window.",
-	"author": "ike.V",
-	"isDesktopOnly": true
+	"author": "ike-V",
+	"isDesktopOnly": true,
+	"authorUrl": "https://github.com/ike-V"
 }
