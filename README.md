@@ -23,7 +23,7 @@ The plugin only adds the command, hotkey and chevrons; the Fokus theme does the 
 
 ![Fokus across color schemes](screenshots/fokus.jpg)
 
-A borderless theme with 18 color schemes (light and dark), your own accent and fonts, and rounded corners beside the sidebars. See **[Fokus](https://github.com/ike-V/obsidian-fokus)** for the full feature list.
+A borderless theme with 20+ color schemes (light and dark), your own accent and fonts, and rounded corners beside the sidebars. See **[Fokus](https://github.com/ike-V/obsidian-fokus)** for the full feature list.
 
 ## Requirements
 
