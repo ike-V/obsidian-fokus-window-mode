@@ -1,4 +1,4 @@
-/* Fokus Window Mode — focus window for the Fokus theme (⌘+\).
+/* Fokus Window Mode — Fokus window for the Fokus theme (⌘+\).
    body.fokus-collapsed   theme hides ribbon, sidebars, tab bar, title bar, status bar */
 const { Plugin, setIcon } = require('obsidian');
 
@@ -10,8 +10,8 @@ module.exports = class FokusWindowMode extends Plugin {
     );
 
     this.addCommand({
-      id: 'toggle-focus',
-      name: 'Toggle focus window',
+      id: 'toggle-fokus',
+      name: 'Toggle Fokus window',
       hotkeys: [{ modifiers: ['Mod'], key: '\\' }],
       callback: () => this.toggle(),
     });
@@ -38,7 +38,7 @@ module.exports = class FokusWindowMode extends Plugin {
     const wrap = createDiv({ cls: `workspace-tab-header-tab-list ${cls}` });
     const btn = wrap.createDiv({ cls: 'clickable-icon' });
     setIcon(btn, icon);
-    btn.setAttribute('aria-label', 'Toggle focus window (⌘+\\)');
+    btn.setAttribute('aria-label', 'Toggle Fokus window (⌘+\\)');
     btn.addEventListener('click', () => this.toggle());
     return wrap;
   }

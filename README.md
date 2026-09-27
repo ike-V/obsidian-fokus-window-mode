@@ -1,12 +1,12 @@
 # Fokus Window Mode
 
-Companion plugin for the **[Fokus](https://github.com/ike-V/obsidian-fokus)** theme: one toggle turns Obsidian into a distraction-free focus window.
+Companion plugin for the **[Fokus](https://github.com/ike-V/obsidian-fokus)** theme: one toggle turns Obsidian into a distraction-free Fokus window.
 
-![Writing in the focus window](screenshots/writing.jpg)
+![Writing in the Fokus window](screenshots/writing.jpg)
 
-## Focus window
+## Fokus window
 
-![Focus window across color schemes](screenshots/focus-window.jpg)
+![Fokus window across color schemes](screenshots/fokus-window.jpg)
 
 **⌘+\\** or the ⌃ chevron in the tab bar turns the window into a single page of writing.
 
@@ -15,9 +15,11 @@ Companion plugin for the **[Fokus](https://github.com/ike-V/obsidian-fokus)** th
 - **No scrollbars.** Scrolling still works; the bar just isn't drawn.
 - **Still a normal window.** It drags by its top edge, and the macOS window buttons stay clear of your text.
 - **Leave** with ⌘+\\ or the ⌄ chevron in the top-right corner. Prefer the hotkey alone? Turn on *Hide the chevron buttons*.
-- **Nothing is changed** in your workspace or settings; focus mode is a single on/off switch.
+- **Nothing is changed** in your workspace or settings; Fokus mode is a single on/off switch.
 
 The plugin only adds the command, hotkey and chevrons; the Fokus theme does the hiding.
+
+![Fokus Style Settings](screenshots/style-settings.png)
 
 ## The Fokus theme
 
