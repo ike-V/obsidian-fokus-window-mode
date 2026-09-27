@@ -2,18 +2,28 @@
 
 Companion plugin for the **[Fokus](https://github.com/ike-V/obsidian-fokus)** theme: one toggle turns Obsidian into a distraction-free focus window.
 
+![Writing in the focus window](screenshots/writing.jpg)
+
+## Focus window
+
 ![Focus window across color schemes](screenshots/focus-window.jpg)
 
-## Use
+**⌘+\\** or the ⌃ chevron in the tab bar turns the window into a single page of writing.
 
-- **⌘+\\** (command: *Toggle focus window*), or the chevron in the tab bar.
-- In the focus window, the ⌄ chevron in the top-right corner (or ⌘+\\) brings everything back.
+- **Hides the ribbon, tab bar, title bar and status bar** by default; keep any of them in **Style Settings → Fokus Style Settings**.
+- **Sidebars stay closed** until you leave, so a stray hotkey can't pull one over your text. They return exactly as they were.
+- **No scrollbars.** Scrolling still works; the bar just isn't drawn.
+- **Still a normal window.** It drags by its top edge, and the macOS window buttons stay clear of your text.
+- **Leave** with ⌘+\\ or the ⌄ chevron in the top-right corner. Prefer the hotkey alone? Turn on *Hide the chevron buttons*.
+- **Nothing is changed** in your workspace or settings; focus mode is a single on/off switch.
 
-The plugin only toggles a class; the Fokus theme hides the ribbon, sidebars, tab bar, title bar and status bar. Nothing in your workspace or settings is changed, so sidebars keep whatever state they have.
+The plugin only adds the command, hotkey and chevrons; the Fokus theme does the hiding.
 
-Choose what gets hidden in **Style Settings → Fokus Style Settings**.
+## The Fokus theme
 
-![Writing in the focus window](screenshots/writing.jpg)
+![Fokus across color schemes](screenshots/fokus.jpg)
+
+A borderless theme with 18 color schemes (light and dark), your own accent and fonts, and rounded corners beside the sidebars. See **[Fokus](https://github.com/ike-V/obsidian-fokus)** for the full feature list.
 
 ## Requirements
 
