@@ -4,8 +4,6 @@
 
 Companion plugin for the **[Fokus](https://github.com/ike-V/obsidian-fokus)** theme: one toggle turns Obsidian into a distraction-free Fokus window.
 
-![Writing in the Fokus window](screenshots/writing.png)
-
 ## Fokus window
 
 ![Fokus window across color schemes](screenshots/fokus-window.png)
