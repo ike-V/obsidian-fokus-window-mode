@@ -4,6 +4,8 @@
 
 A companion plugin for the [Fokus](https://github.com/ike-V/obsidian-fokus) theme. One switch turns Obsidian into a quiet, distraction-free page of writing, and the same switch brings everything back.
 
+![Writing in the Fokus window](screenshots/writing.png)
+
 ## Fokus window
 
 ![Fokus window across color schemes](screenshots/fokus-window.png)
