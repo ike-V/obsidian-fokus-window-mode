@@ -27,9 +27,15 @@ The plugin only adds the command, hotkey and chevrons; the Fokus theme does the 
 
 A borderless theme with 20+ color schemes (light and dark), your own accent and fonts, and rounded corners beside the sidebars. See **[Fokus](https://github.com/ike-V/obsidian-fokus)** for the full feature list.
 
+## Companions
+
+| | |
+|---|---|
+| [Fokus](https://github.com/ike-V/obsidian-fokus) theme | Required; it does the hiding |
+| [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) | Optional; choose what the Fokus window hides |
+
 ## Requirements
 
-- The Fokus theme (without it the toggle has no visible effect).
 - Desktop only.
 
 ## Install
