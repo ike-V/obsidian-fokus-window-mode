@@ -8,13 +8,13 @@ Companion plugin for the **[Fokus](https://github.com/ike-V/obsidian-fokus)** th
 
 ![Fokus window across color schemes](screenshots/fokus-window.png)
 
-**⌘+\\** or the ⌃ chevron in the tab bar turns the window into a single page of writing.
+The hotkey or the ⌃ chevron in the tab bar turns the window into a single page of writing. Turn on ⌘+\\ in *Settings → Fokus Window Mode*, or set any key in *Settings → Hotkeys*.
 
 - **Hides the ribbon, tab bar, title bar and status bar** by default; keep any of them in **Style Settings → Fokus Style Settings**.
 - **Sidebars stay closed** until you leave, so a stray hotkey can't pull one over your text. They return exactly as they were.
 - **No scrollbars.** Scrolling still works; the bar just isn't drawn.
 - **Still a normal window.** It drags by its top edge, and the macOS window buttons stay clear of your text.
-- **Leave** with ⌘+\\ or the ⌄ chevron in the top-right corner. Prefer the hotkey alone? Turn on *Hide the chevron buttons*.
+- **Leave** with the hotkey or the ⌄ chevron in the top-right corner. Prefer the hotkey alone? Turn on *Hide the chevron buttons*.
 - **Nothing is changed** in your workspace or settings; Fokus mode is a single on/off switch.
 
 The plugin only adds the command, hotkey and chevrons; the Fokus theme does the hiding.
