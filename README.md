@@ -2,11 +2,11 @@
 
 Companion plugin for the **[Fokus](https://github.com/ike-V/obsidian-fokus)** theme: one toggle turns Obsidian into a distraction-free Fokus window.
 
-![Writing in the Fokus window](screenshots/writing.jpg)
+![Writing in the Fokus window](screenshots/writing.png)
 
 ## Fokus window
 
-![Fokus window across color schemes](screenshots/fokus-window.jpg)
+![Fokus window across color schemes](screenshots/fokus-window.png)
 
 **⌘+\\** or the ⌃ chevron in the tab bar turns the window into a single page of writing.
 
@@ -23,7 +23,7 @@ The plugin only adds the command, hotkey and chevrons; the Fokus theme does the 
 
 ## The Fokus theme
 
-![Fokus across color schemes](screenshots/fokus.jpg)
+![Fokus across color schemes](screenshots/fokus.png)
 
 A borderless theme with 20+ color schemes (light and dark), your own accent and fonts, and rounded corners beside the sidebars. See **[Fokus](https://github.com/ike-V/obsidian-fokus)** for the full feature list.
 
