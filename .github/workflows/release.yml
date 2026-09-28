@@ -1,0 +1,45 @@
+# Tag push: attest main.js and create the release.
+# Manual run: attest an existing release's main.js.
+name: Release
+
+on:
+  push:
+    tags: ["*"]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Existing release tag to attest
+        required: true
+
+permissions:
+  contents: write
+  id-token: write
+  attestations: write
+
+jobs:
+  release:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check tag matches manifest version
+        run: test "$(jq -r .version manifest.json)" = "$GITHUB_REF_NAME"
+      - uses: actions/attest-build-provenance@v2
+        with:
+          subject-path: main.js
+      - name: Create release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release create "$GITHUB_REF_NAME" main.js manifest.json --title "$GITHUB_REF_NAME" --generate-notes
+
+  attest-existing:
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download release main.js
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release download "${{ inputs.tag }}" -R "$GITHUB_REPOSITORY" -p main.js
+      - uses: actions/attest-build-provenance@v2
+        with:
+          subject-path: main.js
