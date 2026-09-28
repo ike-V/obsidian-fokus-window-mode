@@ -53,7 +53,7 @@ To install it manually, copy `main.js` and `manifest.json` into `.obsidian/plugi
 
 ## Feedback
 
-Built and tested on macOS. If anything misbehaves on Windows or Linux, please [open an issue](https://github.com/ike-V/obsidian-fokus-window-mode/issues).
+Tested on macOS and Linux. If anything misbehaves on Windows, please [open an issue](https://github.com/ike-V/obsidian-fokus-window-mode/issues).
 
 ## License
 
