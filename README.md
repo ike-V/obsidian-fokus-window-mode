@@ -57,4 +57,4 @@ Tested on macOS, Windows and Linux. If anything misbehaves, please [open an issu
 
 ## License
 
-[MIT](LICENSE)
+All rights reserved. See [LICENSE](LICENSE).
