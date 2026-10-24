@@ -1,7 +1,7 @@
 {
 	"id": "fokus",
 	"name": "Fokus Window Mode",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"minAppVersion": "1.4.0",
 	"description": "Companion to the Fokus theme: one hotkey hides the ribbon, sidebars and tab bar for a distraction-free window.",
 	"author": "ike-V",
