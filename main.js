@@ -69,6 +69,9 @@ class FokusSettingTab extends PluginSettingTab {
 
   display() {
     this.containerEl.empty();
+    const by = this.containerEl.createDiv({ cls: 'setting-item-description' });
+    by.appendText('by ');
+    by.createEl('a', { text: 'ike.V', href: 'https://github.com/ike-V' });
     new Setting(this.containerEl)
       .setName('Use ⌘+\\ as the default hotkey')
       .setDesc('Off: set any key in Settings → Hotkeys. Takes effect after reloading Obsidian.')
